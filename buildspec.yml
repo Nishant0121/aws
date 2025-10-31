@@ -1,13 +1,18 @@
 version: 0.2
+
 phases:
   install:
     commands:
-    - echo "No dependencies to install"
-    build:
+      - echo "No dependencies to install"
+
+  build:
     commands:
-    - echo "No build step required"
-    post_build:
+      - echo "No build step required"
+
+  post_build:
     commands:
-    - echo "Deployment package ready"
+      - echo "Deployment package ready"
+
 artifacts:
-files:
+  files:
+    - '**/*'
